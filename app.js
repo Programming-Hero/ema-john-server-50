@@ -75,6 +75,4 @@ client.connect(err => {
 
 const PORT = 4000;
 
-app.listen(PORT, () => {
-    console.log(`Server Port is : ${PORT}`)
-})
+app.listen(process.env.PORT || PORT)
